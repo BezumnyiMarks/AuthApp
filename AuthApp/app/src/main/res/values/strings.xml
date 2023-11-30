@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">AuthApp</string>
+    <string name="access">Вход</string>
+    <string name="login">login</string>
+    <string name="password">password</string>
+    <string name="id">Номер</string>
+    <string name="title">Заголовок</string>
+    <string name="amount">Количество</string>
+    <string name="created">Дата и время</string>
+    <string name="payments_list">Список платежей</string>
+    <string name="failure_message"> Не удалось загрузить информацию о платежах</string>
+    <string name="no_info"> Информация отсутствует</string>
+    <string name="wrong_cred"> Неверное имя пользователя или пароль</string>
+    <string name="profile_header">Личный кабинет</string>
+</resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.AuthFragment">
+
+ <com.google.android.material.textfield.TextInputLayout
+     android:id="@+id/editLoginLayout"
+     android:layout_width="343dp"
+     android:layout_height="wrap_content"
+     style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+     android:layout_marginTop="100dp"
+     android:textColorHint="@color/text_blue"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toTopOf="parent">
+
+  <com.google.android.material.textfield.TextInputEditText
+      android:id="@+id/editLogin"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="@string/login"
+      android:textColor="@color/text_blue"
+      android:textSize="16sp" />
+
+ </com.google.android.material.textfield.TextInputLayout>
+
+
+ <com.google.android.material.textfield.TextInputLayout
+     android:id="@+id/editPasswordLayout"
+     android:layout_width="343dp"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="16dp"
+     style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+     android:textColorHint="@color/text_blue"
+     app:boxStrokeWidth="1dp"
+     app:layout_constraintEnd_toEndOf="@id/editLoginLayout"
+     app:layout_constraintStart_toStartOf="@id/editLoginLayout"
+     app:layout_constraintTop_toBottomOf="@id/editLoginLayout">
+
+  <com.google.android.material.textfield.TextInputEditText
+      android:id="@+id/editPassword"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="@string/password"
+      android:textColor="@color/text_blue"
+      android:textSize="16sp" />
+
+ </com.google.android.material.textfield.TextInputLayout>
+
+ <androidx.appcompat.widget.AppCompatButton
+     android:id="@+id/buttonAccess"
+     android:layout_width="343dp"
+     android:layout_height="48dp"
+     android:layout_marginTop="30dp"
+     android:layout_marginBottom="56dp"
+     android:background="@drawable/button_ripple"
+     android:gravity="center"
+     android:text="@string/access"
+     android:textColor="@color/white"
+     android:textSize="16sp"
+     app:layout_constraintEnd_toEndOf="@+id/editPasswordLayout"
+     app:layout_constraintStart_toStartOf="@id/editPasswordLayout"
+     app:layout_constraintTop_toBottomOf="@id/editPasswordLayout" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
